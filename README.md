@@ -1,4 +1,4 @@
-# Tarea 3: análisis de supuestos sobre modelos de aprendizaje automático
+# Tarea 4: análisis de supuestos sobre modelos de aprendizaje automático
 
 1. Usa este repo como `template` para crear uno nuevo:
   - `Owner` debe ser `avidaldo-ia24`.
