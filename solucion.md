@@ -80,7 +80,7 @@ En ambos casos, se podría considerar el uso de redes neuronales si se dispone d
 
 *Queremos trabajar en un modelo de diagnóstico médico. Tenemos un registro de pacientes con enfermedades y sus síntomas.*
 
-Entendiendo que los **síntomas son las variables predictoras** y los pacientes están **etiquetados con la enfermedad** que padecen, se trataría de un problema de **clasificación (supervisado)**. Si hablamos de pocas enfermedades, se podría utilizar un algoritmo de **clasificación multiclase** como regresión logística, árboles de decisión, random forest, SVM, etc. Si hablamos de muchas enfermedades, se podría utilizar un algoritmo de **clasificación multietiqueta (*multilabel*)**, probablemente con redes neuronales, ya que sería también un problema con muchas variables predictoras con relaciones no lineales.
+Entendiendo que los **síntomas son las variables predictoras** y los pacientes están **etiquetados con la enfermedad** que padecen, se trataría de un problema de **clasificación (supervisado)**. En este caso al poder un paciente tener más de una enfermedad, se trataría de un problema de **clasificación multietiqueta (*multilabel*)**. Asumiendo que además hay un gran número de clases y uchas variables predictoras con relaciones no lineales, probablemente trabajaríamos con redes neuronales.
 
 
 ### Supuesto 10: retrasos en vuelos
@@ -105,5 +105,5 @@ Se trata de un problema de **detección de anomalías (no supervisado)**, simila
 
 *Queremos hacer un filtro de *spam* para el correo electrónico. Tenemos un conjunto de mensajes etiquetados como *spam* o no *spam*.*
 
-Problema de **clasificación binaria (supervisado)**. Podríamos aplicar regresión logística, árboles de decisión, random forest, SVM; pero si se disponen de suficientes datos, las redes neuronales aportan buenos resultados en este tipo de problemas.
+Problema de **clasificación binaria (supervisado)**. Tradicionalmente se aplican Naive Bayes, SVM y arboles de decisión, regresión logística, pero en la actualidad las redes neuronales son muy efectivas en este tipo de problemas, aplicando técnicas de **NLP**.
 
